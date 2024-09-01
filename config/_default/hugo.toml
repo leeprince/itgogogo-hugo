@@ -1,0 +1,48 @@
+baseURL = 'https://itgogogo.cn/'
+languageCode = 'en-us'
+title = 'itgogogo.cn'
+theme = 'ananke'
+#theme = 'hugo-bootstrap-theme'
+
+
+
+#sectionPagesMenu = 'main'
+
+
+[markup]
+  [markup.asciidocExt]
+    backend = 'html5'
+    extensions = []
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = true
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'Products'
+    pageRef = '/products'
+    weight = 20
+  [[menus.main]]
+    name = 'Services'
+    pageRef = '/services'
+    weight = 30
+
+
+
+
+# 内容应用
+#[module]
+#  [[module.mounts]]
+#    source = 'content'
+#    target = 'content'
+#  [[module.mounts]]
+#    source = '/Users/xxx/Downloads/test-hugo-mount'
+#    target = 'content'
